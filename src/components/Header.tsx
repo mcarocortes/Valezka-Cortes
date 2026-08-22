@@ -12,7 +12,7 @@ export function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="header">
+    <header className={open ? 'header is-open' : 'header'}>
       <a className="brand" href="#inicio" onClick={() => setOpen(false)}>
         <Logo />
         <span>
@@ -27,6 +27,9 @@ export function Header() {
             {link.label}
           </a>
         ))}
+        <a className="nav-cta" href="#reserva" onClick={() => setOpen(false)}>
+          Reservar
+        </a>
       </nav>
 
       <a className="btn btn-primary" href="#reserva">

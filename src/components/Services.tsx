@@ -6,7 +6,7 @@ type ServicesProps = {
 
 export function Services({ onOpen }: ServicesProps) {
   return (
-    <section className="section" id="servicios">
+    <section className="section service" id="servicios">
       <div className="wrap">
         <div className="section-head">
           <p className="kicker">Servicios</p>

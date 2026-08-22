@@ -6,8 +6,6 @@ export function About() {
       <div className="wrap about-grid">
         <div className="portrait" role="img" aria-label="Retrato atmosférico de un espacio de consulta">
           <div className="portrait-badge">
-            <strong>VC</strong>
-            <span>{site.name}</span>
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { About } from './components/About'
+import { BackToTop } from './components/BackToTop'
 import { Booking } from './components/Booking'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -22,9 +23,6 @@ function App() {
 
   return (
     <>
-      <a className="skip-link" href="#inicio">
-        Ir al contenido
-      </a>
       <Header />
       <main>
         <Hero />
@@ -35,6 +33,7 @@ function App() {
         <Booking selectedService={selectedService} onServiceChange={setSelectedService} />
       </main>
       <Footer />
+      <BackToTop />
       <ServiceModal item={detail} onClose={() => setDetail(null)} onReserve={reserveService} />
     </>
   )
