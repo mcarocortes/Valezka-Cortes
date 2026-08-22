@@ -211,6 +211,12 @@ p {
   color: var(--cream);
 }
 
+.brand-logo {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
 .brand strong {
   font-family: var(--serif);
   font-size: 1.2rem;
@@ -776,6 +782,13 @@ p {
 
   .hero {
     min-height: auto;
+  }
+  .hero h1 {
+    max-width: 100%;
+  }
+
+  .hero .hero-lead {
+    max-width: 70% !important;
   }
 
   .hero-visual {
