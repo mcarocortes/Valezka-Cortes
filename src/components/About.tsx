@@ -1,4 +1,3 @@
-import portraitImg from '../assets/vc_3.jpg'
 import { site, stats, values } from '../data/site'
 
 export function About() {
@@ -7,7 +6,6 @@ export function About() {
       <div className="wrap about-grid">
         <div className="about-media">
           <div className="portrait">
-            <img src={portraitImg} alt="Valezka Cortés" />
             <div className="portrait-badge" />
           </div>
           <p className="about-quote">
