@@ -17,19 +17,23 @@ type Reservation = {
   message: string
 }
 
+function todayISO() {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
 const emptyForm: Reservation = {
   service: '',
   modality: 'Presencial',
-  date: '',
+  date: todayISO(),
   time: '',
   name: '',
   email: '',
   phone: '',
   message: '',
-}
-
-function todayISO() {
-  return new Date().toISOString().slice(0, 10)
 }
 
 export function Booking({ selectedService, onServiceChange }: BookingProps) {
