@@ -167,7 +167,7 @@ export function Booking({ selectedService, onServiceChange }: BookingProps) {
             </select>
           </label>
 
-          <label className="field">
+          <label className="field full">
             <span>Fecha</span>
             <input
               type="date"

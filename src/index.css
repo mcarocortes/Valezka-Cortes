@@ -643,6 +643,7 @@ p {
   border-radius: 32px;
   background: var(--white);
   border: 1px solid var(--line);
+  min-width: 0;
 }
 
 .booking h2 {
@@ -676,12 +677,15 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+  min-width: 0;
 }
 
 .field {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .field.full {
@@ -697,12 +701,21 @@ p {
 .field select,
 .field textarea {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 14px 14px;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--paper);
   color: var(--ink);
   font-size: 16px;
+  box-sizing: border-box;
+}
+
+.field input[type='date'] {
+  display: block;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .field textarea {
