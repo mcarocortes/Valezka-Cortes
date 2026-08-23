@@ -19,7 +19,7 @@ export function Footer() {
         </div>
       </div>
       <div className="wrap">
-        <small>© {new Date().getFullYear()} {site.name}. Sitio diseñado para un acompañamiento sereno y claro.</small>
+        <small>© {new Date().getFullYear()} {site.name}. Sitio diseñado por Macarena Caro</small>
       </div>
     </footer>
   )
